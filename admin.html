@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Escala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Cadastro de Escala</h1>
+
+<input id="data" type="date">
+<input id="hora" type="time">
+<input id="celebracao" placeholder="Nome da celebração">
+<textarea id="ministros" placeholder="Ministros (separados por vírgula)"></textarea>
+<textarea id="obs" placeholder="Observações"></textarea>
+
+<button onclick="salvarEscala()">Salvar Escala</button>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+
+<script src="admin.js"></script>
+</body>
+</html>
